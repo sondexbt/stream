@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Sondexbt - Library of Streams Telegram Channel.">
+    <meta name="keywords" content="Sondexbt, Library of Streams, Telegram, Trading, Community">
+    <meta name="author" content="Sondexbt">
+    <title>sondexbt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background: #000;
+            background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);
+            font-family: 'Satoshi', sans-serif;
+            color: #fff;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .content {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .logo-loading {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            animation: logoFlyIn 1.5s ease forwards;
+        }
+
+        @keyframes logoFlyIn {
+            0% {
+                transform: translate(-50%, -50%) scale(3);
+                opacity: 0;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .content.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            text-transform: lowercase;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .streams-text {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #000;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-contact {
+            margin-top: 10px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .streams-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.querySelector('.content').classList.add('show');
+            }, 1500);
+        };
+    </script>
+</head>
+<body>
+    <img src="logowhite.png" alt="sondexbt Logo" class="logo-loading">
+    <div class="content">
+        <h1>sondexbt</h1>
+        <p class="streams-text">Library of Streams</p>
+        <button class="btn" onclick="window.open('https://t.me/+mkeG7-vAaE42NDUy', '_blank')">Join Telegram</button>
+        <button class="btn-contact" onclick="window.open('https://t.me/sondex666', '_blank')">Contact Me</button>
+    </div>
+    <footer>© sondexbt Community. All rights reserved.</footer>
+</body>
+</html>
